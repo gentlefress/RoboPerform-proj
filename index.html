@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Do You Have Freestyle? Expressive Humanoid Locomotion via Audio Control">
+  <meta property="og:title" content="Do You Have Freestyle? Expressive Humanoid Locomotion via Audio Control"/>
+  <meta property="og:description" content="Do You Have Freestyle? Expressive Humanoid Locomotion via Audio Control"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/teaser.png" />
+  <meta property="og:image:width" content="1808"/>
+  <meta property="og:image:height" content="1014"/>
+
+
+  <meta name="twitter:title" content="Do You Have Freestyle? Expressive Humanoid Locomotion via Audio Control">
+  <meta name="twitter:description" content="Do You Have Freestyle? Expressive Humanoid Locomotion via Audio Control">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/teaser-1.pdf">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Motion Generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>RoboPerform</title>
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHTFKVMFDL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JHTFKVMFDL');
+</script>
+  
+  <link rel="icon" type="image/x-icon" href="static/images/framework.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://gentlefress.github.io/roboghost-proj/">
+            RoboGhost
+          </a>
+          <a class="navbar-item" href="https://arxiv.org/abs/2412.09901">
+            RoboPerform
+          </a>
+        </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+  
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              <!-- 新增img标签用于显示小图标 -->
+              <img src="static/images/icon.png" style="width: 64px; height: 64px; vertical-align: middle; margin-right: 8px;">
+              Do You Have Freestyle? Expressive Humanoid Locomotion via Audio Control
+            </h1>
+
+            
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Zhe Li<sup>1</sup>*,
+              </span>
+              <span class="author-block">
+                Cheng Chi<sup>2</sup>*‡,
+              </span>
+              <span class="author-block">
+                Yangyang Wei<sup>3</sup>*,
+              </span>
+              <span class="author-block">
+                Boan Zhu<sup>4</sup>,
+              </span>
+              <span class="author-block">
+                Tao Huang<sup>5</sup>,
+              </span>
+              <span class="author-block">
+                Zhenguo Sun<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                Yibo Peng<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                Pengwei Wang<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                Zhongyuan Wang<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                Fangzhou Liu<sup>3</sup>,
+              </span>
+              <span class="author-block">
+                Chang Xu<sup>1</sup>†
+              </span>
+              <span class="author-block">
+                Shanghang Zhang<sup>2,6</sup>†,
+              </span>
+
+              
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="eql-cntrb" style="display:block;"><large><sup>1</sup>University of Sydney</large></span>
+              <span class="eql-cntrb" style="display:block;"><large><sup>2</sup>BAAI</large></span>
+              <span class="eql-cntrb" style="display:block;"><large><sup>3</sup>Harbin Institute of Technology</large></span>
+              <span class="eql-cntrb" style="display:block;"><large><sup>4</sup>Hong Kong University of Science and Technology</large></span>
+              <span class="eql-cntrb" style="display:block;"><large><sup>5</sup>Shanghai Jiao Tong University</large></span>
+              <span class="eql-cntrb" style="display:block;"><large><sup>6</sup>Peking University</large></span>
+
+            <div class="is-size-5 publication-authors">
+              <span class="eql-cntrb">* Equal Contribution &nbsp &nbsp ‡ Project Lead &nbsp &nbsp † Corresponding Author </span>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- <img src="static/images/framework.pdf" alt="MY ALT TEXT"/> -->
+          <p>
+            Humans intuitively move to sound, but current humanoid robots lack expressive improvisational capabilities, confined to predefined motions or sparse commands. Generating motion from audio and then retargeting it to robots relies on explicit motion reconstruction, leading to cascaded errors, high latency, and disjointed acoustic-actuation mapping. We propose RoboPerform, the first unified audio-to-locomotion framework that can directly generate music-driven dance and speech-driven co-speech gestures from audio. Guided by the core principle of "motion = content + style", the framework treats audio as implicit style signals and eliminates the need for explicit motion reconstruction. RoboPerform integrates a ResMoE teacher policy for adapting to diverse motion patterns and a diffusion-based student policy for audio style injection. This retargeting-free design ensures low latency and high fidelity. Experimental validation shows that RoboPerform achieves promising results in physical plausibility and audio alignment, successfully transforming robots into responsive performers capable of reacting to audio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Method -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+      <h2 class="title is-3" align="center">Methodology</h2>
+      <div class="content has-text-justified">
+        <img src="static/images/teaser.png" width="100%" height="100%" />
+        <p>
+          RoboPerform makes humanoid perform as dancer and talker, which utilizes audio as signal to control humanoid locomotion, enabling poolicy to generate rhythm-aligned co-speech gestures and dance movements via input speech or music.
+        </p>
+      </div>
+      <br>
+      <!-- <h2 class="title is-5">LaMP-T2M and LaMP-M2T frameworks overview:</h2> -->
+      <div class="content has-text-justified">
+        <img src="static/images/framework.png" width="100%" height="100%" />
+        <p>
+          Overview of RoboPerform. We propose a two-stage approach: train an adaptor to inject kinematic information into audio modality,
+          then a ∆MoE teacher policy is trained with RL and a diffusion-based student policy is trained to denoise actions conditioned on audio latent.
+          We propose that motion=content+style. Thus, we fix the motion latent as a constant condition and leverage different audio signals as style
+          modulation signals to generate actions adaptive to diverse rhythms.
+        </p>
+      </div>
+      <div class="content has-text-justified">
+        <img src="static/images/moe.png" width="100%" height="100%" />
+      </div>
+  </div>
+</section>
+<!-- End Method -->
+
+
+<!-- Experiments -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+      <h2 class="title is-3" align="center">Experiments</h2>
+      <div class="content has-text-centered">
+        <iframe width="860" height="615" src="https://www.youtube.com/embed/SuvtwygzkL8?si=-bPBd6rR6MRM7paS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
+      <h2 class="title is-5">Quantitative Results:</h2>
+      <div style="text-align: center; margin: 8px 0;">
+        <span style="font-size: 1.1em; font-weight: 500;">Tracking Performance</span>
+      </div>
+
+      <div style="text-align: center;">
+        <img src="static/images/tracking.png" width="80%" height="100%"/>
+      </div>
+      <br>
+      <div style="text-align: center; margin: 8px 0;">
+        <span style="font-size: 1.1em; font-weight: 500;">Motion-Audio Alignment</span>
+      </div>
+      <div style="text-align: center;">
+        <img src="static/images/align.png" width="80%" height="100%"/>
+      </div>
+      <div style="text-align: center; margin: 8px 0;">
+        <span style="font-size: 1.1em; font-weight: 500;">Ablation Study on Adaptor</span>
+      </div>
+      <div style="text-align: center;">
+        <img src="static/images/ablation_ada.png" width="80%" height="100%"/>
+      </div>
+      <div style="text-align: center; margin: 8px 0;">
+        <span style="font-size: 1.1em; font-weight: 500;">Ablation Study on ∆MoE</span>
+      </div>
+      <div style="text-align: center;">
+        <img src="static/images/ablation_moe.png" width="80%" height="100%"/>
+      </div>
+      <div style="text-align: center; margin: 8px 0;">
+        <span style="font-size: 1.1em; font-weight: 500;">Ablation Study on Style Injection</span>
+      </div>
+      <div style="text-align: center;">
+        <img src="static/images/ablation_cs.png" width="80%" height="100%"/>
+      </div>
+      <br>
+      <h2 class="title is-5">Qualitative Results:</h2>
+      <div style="text-align: center; margin: 8px 0;">
+        <span style="font-size: 1.1em; font-weight: 500;">Simulation Performance</span>
+      </div>
+      <div style="text-align: center;">
+        <img src="static/images/simulation.png" width="80%" height="100%" />
+      </div>
+      <div style="text-align: center; margin: 8px 0;">
+        <span style="font-size: 1.1em; font-weight: 500;">MLP Policy vs Diffusion Policy</span>
+      </div>
+      <div style="text-align: center;">
+        <img src="static/images/freestyle.png" width="80%" height="100%"/>
+      </div>
+      <div style="text-align: center; margin: 8px 0;">
+        <span style="font-size: 1.1em; font-weight: 500;">T-SNE clustering on each expert of ∆MoE</span>
+      </div>
+      <div style="text-align: center;">
+        <img src="static/images/tnse.png" width="80%" height="100%"/>
+      </div>
+      <div style="text-align: center; margin: 8px 0;">
+        <span style="font-size: 1.1em; font-weight: 500;">Tracking Performance</span>
+      </div>
+      <div style="text-align: center;">
+        <img src="static/images/hink.png" width="80%" height="100%"/>
+      </div>
+      <div style="text-align: center; margin: 8px 0;">
+        <span style="font-size: 1.1em; font-weight: 500;">Real-world Performance</span>
+      </div>
+      <div style="text-align: center;">
+        <img src="static/images/real_1.png" width="80%" height="100%" />
+      </div>
+      <div style="text-align: center;">
+        <img src="static/images/real_2.png" width="80%" height="100%" />
+      </div>
+      <div style="text-align: center;">
+        <img src="static/images/real_3.png" width="80%" height="100%" />
+      </div>
+  </div>
+</section>
+<!-- End Method -->
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+<pre><code>@article{li2025roboperform,
+    title={Do You Have Freestyle? Expressive Humanoid Locomotion via Audio Control},
+    author={Zhe Li and Chengchi and Yangyang Wei and Boan Zhu and Tao Huang and Zhenguo Sun and Yibo Peng and Pengwei Wang and and Zhongyuan Wang and Fangzhou Liu and Chang Xu and Shanghang Zhang},
+    journal={arXiv preprint arXiv:2510.14952},
+    year={2025}
+}
+    </code></pre>
+  </div>
+</section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
